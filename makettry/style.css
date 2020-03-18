@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Код из Фигмы для линии под тайтлом */
 
-line
+line{
     position: absolute;
     width: 90px;
     height: 7px;
@@ -154,6 +154,7 @@ line
     background: #300505;
     mix-blend-mode: normal;
     opacity: 0.15;
+}
 
 /* конец кода из Фигмы */
 
