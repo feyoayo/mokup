@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    height: 596px;
     background: url(img/Intro_01.jpg) center no-repeat;
     background-size: cover;
 } 
@@ -56,13 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffcc;
     left: 50%;
     margin-top: 10%;
-    padding: 15px;
     transform: translate(-50%, 0);
     border-radius: 5px;
     text-align: center;
-    width: 200px;
     text-transform: uppercase;
-
+    border: none;
+    cursor: pointer;
+    width: 290px;
+    height: 70px;
 }
 
 /* Header */
@@ -119,9 +120,8 @@ h1, h2, h3, h4, h5, h6 {
 .services {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
-    height: 70vh;
+    height: 747px;
     background: url(img/images/services_02.jpg) center no-repeat;
     background-size: cover;
 }
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 930px;
     margin: 0 auto;
-    padding-top: 0;
+    padding-top: 110px;
     vertical-align: top;
 }
 
@@ -147,16 +147,31 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-    max-width: 900px;
-
 }
 
-/* Skill services */
+/* Services Icons */
 
-.skill__services{
+.icons__services{
     display: flex;
+    justify-content: space-between;
+    height: 135px;
+    width: 982px;
 }
-.branding {
-    background: url(img/images/flag_03.jpg) right no-repeat;
-    background-size: auto;
+.skillname {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Services Skills Text */
+
+.titles_serv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding, .design, .development, .rocket_science {
+    width: 200px;
+    height: 200px;
 }
