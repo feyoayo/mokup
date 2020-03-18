@@ -25,6 +25,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+/* Линия подчеркивания под тайтлами различных частей */
+.line {
+    background: #300505;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    width: 90px;
+    height: 7px;
+}
+
+
 /* Intro */
 
 .intro {
@@ -142,22 +152,6 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-/* Код из Фигмы для линии под тайтлом */
-
-line{
-    position: absolute;
-    width: 90px;
-    height: 7px;
-    left: 676px;
-    top: 169px;
-
-    background: #300505;
-    mix-blend-mode: normal;
-    opacity: 0.15;
-}
-
-/* конец кода из Фигмы */
-
 
 .services__text{
     text-align: center;
@@ -218,11 +212,15 @@ line{
     vertical-align: top;
 }
 
+/* Checkout */
+
+
+
 .team__title {
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
     font-weight: 700;
     color: #3C4761;
-
 }
+
