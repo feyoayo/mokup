@@ -142,6 +142,21 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+/* Код из Фигмы для линии под тайтлом */
+
+line::after {
+    position: absolute;
+    width: 90px;
+    height: 7px;
+    left: 676px;
+    top: 169px;
+
+    background: #300505;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+}
+/* конец кода из Фигмы */
+
 
 .services__text{
     text-align: center;
@@ -157,12 +172,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 135px;
     width: 982px;
 }
-.skillname {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
-}
 
 /* Services Skills Text */
 
@@ -171,7 +180,17 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
-.branding, .design, .development, .rocket_science {
-    width: 200px;
-    height: 200px;
+.skillname {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.skill_name_text{
+    font-size: 16px;
+    text-align: center;
+    width: 222px;
+    font-weight: 400;
+
 }
