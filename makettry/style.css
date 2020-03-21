@@ -32,6 +32,8 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.15;
     width: 90px;
     height: 7px;
+    /* margin-top: -5px; */
+
 }
 
 
@@ -212,10 +214,6 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: top;
 }
 
-/* Checkout */
-
-
-
 .team__title {
     text-transform: uppercase;
     text-align: center;
@@ -224,3 +222,35 @@ h1, h2, h3, h4, h5, h6 {
     color: #3C4761;
 }
 
+.team__text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #414860;
+}
+
+.team__column {
+    display: flex;
+    justify-content: space-between;
+}
+.team__name{
+    text-transform: uppercase;
+    color: #414960;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.team__salary{   /* Должность в команде */
+    font-size: 16px;
+    color: #6fb8e5;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.team__about {
+    font-size: 16px;
+    font-weight: 300;
+    color: #414960;
+}
