@@ -78,13 +78,15 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     margin-top: 10%;
     transform: translate(-50%, 0);
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     width: 290px;
     height: 70px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* Header */
@@ -368,7 +370,276 @@ h1, h2, h3, h4, h5, h6 {
     width: 598px;
 }
 
-.skills_column {
+.skills__column {
     display: flex;
     justify-content: space-between;
+    margin-top: 45px;
+}
+
+
+/* PORTFOLLIO PART */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1423px;
+    background: url(img/background/5th_part.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.portf_inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 110px;
+    vertical-align: top;
+}
+
+.portf_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #393939;
+}
+
+.portf_text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #393939;
+}
+
+
+.portf_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    width: 380px;
+    position: relative;
+    transform: translate(-50%,0);
+    left: 50%;
+    
+
+}
+
+.pl {
+    color: #393939;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ebc985;
+    width: 90px;
+}
+
+.pl:hover {
+    background: #ffffff;
+}
+
+.portf_block1, .portf_block2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.works_titles {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.portf_btn {
+    display: inline-block;
+    position: relative;
+    background: #17c2a4;
+    color: #ffffcc;
+    left: 50%;
+    margin-top: 80px;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 290px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* WHAT PEOPLE SAY ABOUT US PART */
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    background: url(img/background/6th_part.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 895px;
+}
+
+.aboutus_inner {
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    padding-top: 110px;
+    vertical-align: top;
+}
+
+.about_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.about_text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+
+
+/* GET INTOUCH */
+.intouch {
+    display: flex;
+    flex-direction: column;
+    background: url(img/background/7th_part.jpg);
+    width: 100%;
+    height: 819px;
+}
+.intouch_inner {
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    padding-top: 110px;
+    vertical-align: top;
+}
+
+.intouch_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.intouch_text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.inputs1 {
+    display: flex;
+    justify-content: space-between;
+    width: 864px;
+    margin-top: 40px;
+    position: relative;
+    transform: translate(-50%,0);
+    left: 50%;
+}
+
+.name, .email {
+    width: 417px;
+    height: 59px;
+    border: none;
+    background-color: #273a71;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ffffff;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.inputs2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    transform: translate(-50%,0);
+    left: 50%;
+}
+
+.message {
+    width: 864px;
+    height: 200px;
+    border: none;
+    background-color: #273a71;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ffffff;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}   
+
+.int_btn {
+    display: inline-block;
+    position: relative;
+    background: #30bae7;
+    color: #ffffcc;
+    left: 50%;
+    margin-top: 10%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 290px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+/* Social Media Contacts */
+
+.our_contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url(img/background/last.jpg);
+    width: 100%;
+    height: 112px;
+    text-align: center;
+    align-items: center;
+}
+
+.smlink {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin: 30px;
+    transition: color 0.4s linear;
+}
+
+.smlink:hover {
+    color:#273a71;
+}
+
+.required {
+    color: red;
 }
