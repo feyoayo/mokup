@@ -1,3 +1,10 @@
+/* Указываем класс Container чтобы задать определение ширины отдельной части */
+/* position:relative;transform: translate(-50%, 0); left 50%;
+Таким образом можно перенести текст на центр
+ */
+
+
+
 body {
     margin: 0;
     font-family: 'Titillium Web', sans-serif;
@@ -17,7 +24,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* Container */
+
+
+/* Container который определяет в какой области монитора будет расположен весь контент*/
 
 .container {
     width: 100%;
@@ -170,6 +179,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 982px;
 }
 
+.skill__column {  /* колонки для Скилов */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 203px;
+    height: 493px;
+}
+
 /* Services Skills Text */
 
 .titles_serv {
@@ -229,18 +246,29 @@ h1, h2, h3, h4, h5, h6 {
     color: #414860;
 }
 
-.team__column {
+.team__column {    /* контейнер с колонками имен */
     display: flex;
     justify-content: space-between;
 }
+
+
+.name__column{    /* Сами колонки команды. Здесь показано как выровнять колонки по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 203px;
+    height: 493px;
+    margin-top: 73px;
+}
+
 .team__name{
     text-transform: uppercase;
     color: #414960;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
-    padding-top: 90px;
+    margin-top: 43px;
 }
+
 
 .team__salary{   /* Должность в команде */
     font-size: 16px;
@@ -253,4 +281,66 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: 300;
     color: #414960;
+    text-transform: none;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 22px;
+}
+.team__contacts_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 166px;
+    margin-top: 30px;
+}
+
+.team__contacts_2 {
+    display: flex;
+    justify-content: space-between;
+    width: 122px;
+    margin-top: 30px;
+}
+
+
+
+/* SKILLS PART */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 658px;
+    background: url(img/background/4rth_part.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.skills__inner {
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    padding-top: 110px;
+    vertical-align: top;
+}
+.skills__title  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3C4761;
+}
+
+.skills__text {
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #414960;
+    width: 598px;
+}
+
+.skills_column {
+    display: flex;
+    justify-content: space-between;
 }
