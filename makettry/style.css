@@ -165,9 +165,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .services__text{
+    position: relative;
+    transform: translate(-50%,0);
+    left: 50%;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+    width: 633px;
+    
 }
 
 /* Services Icons */
@@ -175,16 +180,41 @@ h1, h2, h3, h4, h5, h6 {
 .icons__services{
     display: flex;
     justify-content: space-between;
-    height: 135px;
-    width: 982px;
+    margin-top: 40px;
 }
 
-.skill__column {  /* колонки для Скилов */
+.skill__column1 {  /* колонки для сервисов */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 203px;
-    height: 493px;
+    align-content: center;
+    width: 192px;
+    height: 297px;
+}
+.skill__column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 173px;
+    height: 305px;
+}
+.skill__column3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 205px;
+    height: 296px;
+}
+
+.skill__column4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 189px;
+    height: 313px;
 }
 
 /* Services Skills Text */
@@ -195,20 +225,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skillname {
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
-    padding-top: 90px;
 }
 
 .skill_name_text{
     font-size: 16px;
     text-align: center;
-    width: 222px;
     font-weight: 400;
-    padding-top: 20px;
-
+    text-transform: none;
 }
 
 
