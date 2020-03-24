@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
     height: 596px;
-    background: url(img/Intro_01.jpg) center no-repeat;
+    background: url(img/background/violet_1stpart.jpg) center no-repeat;
     background-size: cover;
 } 
 
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     width: 100%;
     height: 750px;
-    background: url(img/images/services_02.jpg) center no-repeat;
+    background: url(img/background/green_2ndpart.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 40px;
 }
 
-.skill__column1 {  /* колонки для сервисов */
+.skill__column1 {  /* колонки для сервисов, продублировал чтобы задать разные высоту и ширину для колонки, подставил одинаковые изображения и оказалось не нужным */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     width: 100%;
     height: 920px;
-    background: url(img/team.jpg) center no-repeat;
+    background: url(img/background/white_3rdpart.jpg) center no-repeat;
     background-size: 100%;
 }
 
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-top: 22px;
 }
-.team__contacts_1 {
+.team__contacts_1 {    /* Тут разбил на 2 группы по 4 и по 3 иконки, можно было задать для каждой иконки определенный контейнер, походу сфилонил, можно переделать */
     display: flex;
     justify-content: space-between;
     width: 166px;
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-.inputs1 {
+.inputs1 {    /* position:relative;left 50%;transform:translate(-50%,0) можно выронять по центру */
     display: flex;
     justify-content: space-between;
     width: 864px;
