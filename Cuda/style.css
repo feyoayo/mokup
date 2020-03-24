@@ -641,7 +641,3 @@ textarea {  /* запрещаем изменение размера в textarea 
 .smlink:hover {
     color:#273a71;
 }
-
-.required {
-    color: red;
-}
