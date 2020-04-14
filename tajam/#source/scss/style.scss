@@ -1,0 +1,170 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Hammersmith One', sans-serif; */
+
+
+@import "nullify.scss" ;
+$roboto: 'Roboto', sans-serif;
+$playfair: 'Playfair Display', serif;
+$hammer: 'Hammersmith One', sans-serif;
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+ .header {
+     .container {
+         max-width: 70%;
+     }
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    padding-top: 30px;
+    .header_inner {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tajam_logo
+        .nav {
+            width: 540px;
+            height: 9px;
+            }
+        .nav__link {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: $roboto;
+            font-size: 13px;
+            font-weight: 900;
+            text-align: right;
+            padding: 5px;
+            transition: linear 0.3s;
+        }
+        .nav__link:hover {
+            color: #00e0d0;
+
+        }
+    }
+
+}
+
+.intro {
+    width: 100%;
+    height: 670px;
+    background: url(/tajam/img/introbg.jpg) no-repeat;
+    background-size: cover;
+    .intro_inner {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .intro_title {
+            padding-top: 100px;
+            font-family: $playfair;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            letter-spacing: 0.32px;
+        }
+        .intro_text {
+            width: 771px;
+            font-family: $roboto;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.7px;
+            color: #ffffff;
+            text-align: center;
+        }   
+        .intro_btn  {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            align-items: center;
+            text-align: center;
+            width: 120px;
+            height: 40px;
+            border: solid 1px #00e0d0;
+            border-radius: 2px;
+            .i_btn {
+                text-align: center;
+                text-decoration: none;
+                background: none;
+                font-family: $hammer;
+                color: #00e0d0;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+        }   
+    }
+}
+
+.our_inner {
+    max-width: 880px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.our_img {
+
+}
+
+.our_title {
+    width: 33.6%;
+    .ourG {
+        text-transform: uppercase;
+        font-family: PlayfairDisplay;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.1px;
+        text-align: left;
+        color: #413d4b;
+    }
+    .ourt {
+        width: 538px;
+        height: 146px;
+        opacity: 0.75;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.57;
+        letter-spacing: 0.42px;
+        text-align: left;
+        color: rgba(65, 61, 75, 0.75);
+    }
+    .our_btn {
+        text-align: center;
+        text-decoration: none;
+        background: none;
+        font-family: $hammer;
+        color: #00e0d0;
+        font-size: 16px;
+        text-transform: uppercase;
+        width: 120px;
+        height: 40px;
+        border: solid 1px #00e0d0;
+        border-radius: 2px;
+    }
+}
+
+

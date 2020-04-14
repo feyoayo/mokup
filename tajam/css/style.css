@@ -1,0 +1,814 @@
+@charset "UTF-8";
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Hammersmith One', sans-serif; */
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  padding-top: 30px;
+}
+.header .container {
+  max-width: 70%;
+}
+.header .header_inner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header_inner .tajam_logo .nav {
+  width: 540px;
+  height: 9px;
+}
+.header .header_inner .nav__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: right;
+  padding: 5px;
+  transition: linear 0.3s;
+}
+.header .header_inner .nav__link:hover {
+  color: #00e0d0;
+}
+
+.intro {
+  width: 100%;
+  height: 670px;
+  background: url(/tajam/img/introbg.jpg) no-repeat;
+  background-size: cover;
+}
+.intro .intro_inner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro .intro_inner .intro_title {
+  padding-top: 100px;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.32px;
+}
+.intro .intro_inner .intro_text {
+  width: 771px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  text-align: center;
+}
+.intro .intro_inner .intro_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border: solid 1px #00e0d0;
+  border-radius: 2px;
+}
+.intro .intro_inner .intro_btn .i_btn {
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  font-family: "Hammersmith One", sans-serif;
+  color: #00e0d0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+
+    /* Our story  */
+
+.our_story { 
+  display: flex;
+  width: 100%;
+  height: 405px;
+}
+.our_inner {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 880px;
+  display: flex;
+}
+
+.our_st {
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.our_img {
+
+}
+
+.our_title {
+  width: 33.6%;
+  margin-left: 140px;
+}
+.ourG {
+  text-transform: uppercase;
+  font-family: PlayfairDisplay;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: left;
+  color: #413d4b;
+}
+.our_title .ourt {
+  width: 538px;
+  height: 146px;
+  opacity: 0.75;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.42px;
+  text-align: left;
+  color: rgba(65, 61, 75, 0.75);
+}
+.our_btn {
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  font-family: "Hammersmith One", sans-serif;
+  color: #00e0d0;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 40px;
+  border: solid 1px #00e0d0;
+  border-radius: 2px;
+}
+
+
+
+/* Play Viceos Section */
+
+.wos {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  background: url(/tajam/img/wos.jpg)center no-repeat;
+  background-size: cover;
+}
+
+.play_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.wos_t {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Roboto;
+  padding-top: 35px;
+
+}
+
+
+/* EXPERTISE PART */
+
+.expertise {
+  width: 100%;
+  height: 750px;
+  background-color: #ffffff;
+  background-size: cover;
+}
+
+
+.exp_inner {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+
+p.exp__title {
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: center;
+  color: #413d4b;
+}
+
+p.exp_t {
+  opacity: 0.75;
+  font-family: PlayfairDisplay;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  text-align: center;
+  color: rgba(47, 45, 53, 0.75);
+}
+
+.exp__skills {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_skills, .bottom_skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.skills_images, .skills_images_b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.skills_images_b {
+  margin-top: 40px;
+}
+
+p._skillstitle {   /* !Общий класс для всех заголовков в блоке top skills */
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #413d4b;
+}
+
+
+.skills_text{
+  margin-bottom: 40px;
+  margin-top: 25px;
+  opacity: 0.75;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.75);
+
+}
+
+
+.branding {
+  width: 320px;
+  border-left: solid 1px #ebebeb;
+  border-right: solid 1px #ebebeb;
+  border-bottom: solid 1px #ebebeb;
+}
+
+.game_dev {
+  width: 320px;
+  border-left: solid 1px #ebebeb;
+  border-right: solid 1px #ebebeb;
+}
+
+.web_design, .mapp {
+  width: 310px;
+  border-bottom: solid 1px #ebebeb;
+}
+
+.sengine, .mwl {
+  width: 310px;
+}
+
+
+
+/* TEAM PART */
+
+.team {
+  width: 100%;
+  height: 715px;
+  background: url(/tajam/img/team.jpg) center;
+  background-size: cover;
+}
+
+.team__inner {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.team__title {
+  font-family: PlayfairDisplay;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.team__text {
+  font-family: PlayfairDisplay;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  text-align: center;
+  color: #f9f9f9;
+  margin-top: 16px;
+}
+
+.team_column {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 40px;
+}
+
+
+.person {
+  border: solid 1px #7e7c90;
+}
+
+.avatar {
+
+}
+
+.name {
+
+}
+
+.n {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #ffffff;
+}
+.pos {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  opacity: 0.7;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.7);
+}
+
+.aftertext {
+  margin-top: 70px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.tbtn {  /* блок кнопки */
+margin-top: 25px;
+}
+
+.teambtn {  /* Сама кнопка */
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  font-family: "Hammersmith One", sans-serif;
+  color: #00e0d0;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 40px;
+  border: solid 1px #00e0d0;
+  border-radius: 2px;
+}
+
+
+
+/* Our Works Part */
+
+.our_works{
+  display: flex;
+  width: 100%;
+  height: 740px;
+  background: #ffffff;
+  background-size: cover;
+}
+.works__inner {
+  margin: 0 auto;
+  width: 1600px;
+  margin-top: 70px;
+}
+.works__title {
+  margin: 0 auto;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+.wt {
+  font-family: PlayfairDisplay;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: left;
+  color: #413d4b;
+}
+.works_link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-align: right;
+  color: #413d4b;
+}
+.works__image {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction:column;
+  max-width: 100%;
+}
+.top_works, .bottom_works{
+
+}
+
+.works_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 70px;
+}
+.wbtn {
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  font-family: "Hammersmith One", sans-serif;
+  color: #00e0d0;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 40px;
+  border: solid 1px #00e0d0;
+  border-radius: 2px;
+}
+
+
+
+/* something part */
+
+.something {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background: url(/tajam/img/something.jpg) center;
+  background-size: cover;
+}
+.container {
+}
+.some__inner {
+  margin-top: 100px;
+}
+
+.some__title {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
+  font-family: PlayfairDisplay;
+  font-size: 100px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.22;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+}
+.some__text {
+  margin-top: 40px;
+  opacity: 0.85;
+  font-family: PlayfairDisplay;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+}
+.some__name {
+}
+.somename {
+  margin-top: 50px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #ffffff;
+}
+.someplace {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.some_avatars {
+  margin-top: 45px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.av {
+  padding: 5px;
+}
+.leftarrow, .rightarrow {
+  padding: 20px;
+}
+
+
+
+
+/* contact part */
+
+
+.contact {
+  width: 100%;
+  height: 655px;
+  background: #ffffff center;
+  background-size: cover;
+}
+.container {
+}
+.contact__inner {
+  margin-top: 70px;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+
+}
+.goodnews {
+  display: flex;
+  flex-direction: column;
+}
+.cont__title {
+  font-family: PlayfairDisplay;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: left;
+  color: #413d4b;
+}
+
+
+.name_,
+.email_,
+.subject_,
+.message_ {
+  margin-top: 20px;
+  border: 1px #cac8c8 solid;
+  width: 460px;
+  height: 45px;
+  color: #999999; 
+}
+.message_ {
+  height: 200px;
+}
+.submit_button {
+  margin-top: 20px;
+}
+.submbtn {
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  font-family: "Hammersmith One", sans-serif;
+  color: #00e0d0;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 40px;
+  border: solid 1px #00e0d0;
+  border-radius: 2px;
+}
+.happy {
+display: flex;
+flex-direction: column;
+}
+
+.happy__cleints {
+  display: flex;
+}
+
+.clients_left {
+  float: left;
+}
+
+.clients_right {
+  float: right;
+}
+.logo {
+  margin-top: 45px;
+}
+
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 400px;
+  background: url(/tajam/img/footer.jpg);
+  background-size: cover;
+}
+.container {
+}
+.footer_inner {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+.footer__logoblock {
+  width: 33.3%;
+}
+.footer__tajam_logo {
+}
+.footer__lorem_text {
+}
+.footer__contactblock {
+  width: 33.3%;
+}
+.footer__title {
+}
+.footer__adress {
+}
+.footer__location {
+}
+.footer__number {
+}
+
