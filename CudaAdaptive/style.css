@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    box-sizing: border-box;
     overflow-y: scroll;
     overflow-x: hidden;
 
@@ -61,39 +62,38 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 85.75539568345324vh;
+    height: 596px;
     background: url(img/background/violet_1stpart.jpg) center no-repeat;
     background-size: cover;
 } 
 
 .intro__inner {
+    display: flex;
+    height: 60%;
+    flex-direction: column;
     width: 100%;
     max-width: 68.08199121522694vw;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .intro__title {
-    color: #f7f3ea;
+    flex: 1 1 auto;
     text-align: center;
+    max-width: 906px;
+    color: #f7f3ea;
     font-family: "Titillium Web";
-    font-weight: 700;
     font-size: 42px;
+    font-weight: 700;
     line-height: 48.82px;
 }
-
-.intro__title {
-    font-size: 42px;
-}
- 
 
 .head__btn {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
 }
 
 .intro__button{
-    display: flex;
     justify-content: center;
     background: #eb7d4b;
     color: #ffffcc;
@@ -107,6 +107,25 @@ h1, h2, h3, h4, h5, h6 {
     height: 70px;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .intro {
+        height: 67vh;
+    }
+    .intro__button {
+        width: 340px;
+        height: 100px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+
 }
 
 @media screen and (max-width: 320px){
@@ -254,6 +273,28 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.36px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .services {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .services {
+        height: 100vh;
+    }
+    .services__inner {
+        padding-top: 60px;
+        max-width: 700px;
+    }
+    .services__text {
+        font-size: 30px;
+        margin-top: 30px;
+        
+    }
+
+}
+
 @media screen and ( max-width: 320px) {
     .services {
         height: 280vh;
@@ -274,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 /* Services Columns */
 
 .services__columns {
@@ -282,12 +324,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services__columns_row { 
+    flex-wrap: wrap;
     display: flex;
-    flex: 1 1 25%;
+    flex: 1 0 25%;
 }
 
-.skill__column {  /* колонки для сервисов, продублировал чтобы задать разные высоту и ширину для колонки, подставил одинаковые изображения и оказалось не нужным */
+.skill__column {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     flex-direction: column; 
     padding: 0px 50px;
 }
@@ -320,6 +365,19 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
 }
 
+@media (max-width: 767px) {
+    .services__columns_row {
+        display: flex;
+       flex-wrap: wrap;
+       flex: 1 1 50%;
+    }   
+    .skill__column {
+        padding: 0;
+        max-width: 300px;
+        margin-top: 40px;
+    }
+}
+
 @media screen and ( max-width: 320px) {
     .services__columns_row {
         flex: 1 1 100%;
@@ -333,6 +391,9 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+
+
+
 /* Team */
 
 .team {
@@ -343,6 +404,13 @@ h1, h2, h3, h4, h5, h6 {
     background: url(img/background/white_3rdpart.jpg) center no-repeat;
     background-size: cover;
 }
+
+@media screen and ( max-width: 767px) {
+    .team {
+        height: 150vh;
+    }
+}
+
 @media screen and ( max-width: 320px) {
     .team {
         height: 400vh;
@@ -360,7 +428,16 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and ( max-width: 320px) {
     .team__inner {
         padding-top: 40px;
+        max-width: 320px;
     }
+}
+
+@media (max-width: 767px) {
+    .team__inner {
+        padding-top: 60px;
+        max-width: 760px;
+    }
+
 }
 
 .team__title {
@@ -383,6 +460,15 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.36px;
 }
 
+@media screen and ( max-width: 767px) {
+    .team__text {
+        font-size: 30px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+}
+
 @media screen and ( max-width: 320px) {
     .team__text {
         font-size: 20px;
@@ -390,6 +476,8 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
 }
+
+
 
 .team__column {    /* контейнер с колонками имен */
     display: flex;
@@ -444,12 +532,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
 }
 
-@media screen and ( max-width: 320px) {
+
+@media screen and ( max-width: 767px )  {
+    
     .team__column {
+        justify-content: center;
+        margin: 0 auto;
         flex-wrap: wrap;
-        flex: 1 1 100%;
-        padding: 10px;
+        flex: 1 1 auto;
+        padding: 30px;
     }
+
+
+    .name__column {
+        max-width: 300px;
+    }
+
+    .team__about {
+        flex: 0 1 100%;
+    }
+}
+
+@media screen and ( max-width: 320px) {
+
     .name__column {
         margin-top: 20px;
     }
@@ -465,6 +570,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
 /* SKILLS PART */
 
 .skills {
@@ -475,6 +581,13 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(img/background/4rth_part.jpg);
     background-size: cover;
 }
+
+@media screen and ( max-width: 767px) {
+    .skills {
+        height: 100vh;
+    }
+}
+
 @media screen and ( max-width: 320px) {
     .skills {
         height: 230vh;
@@ -487,6 +600,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     vertical-align: top;
     padding-top: 110px;
+}
+
+@media screen and ( max-width: 767px) {
+    .skills__inner {
+        padding-top: 60px;
+    }
 }
 
 @media screen and ( max-width: 320px) {
@@ -515,6 +634,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
+}
+
+@media screen and ( max-width: 767px) {
+    .skills__text {
+        font-size: 30px;
+        margin-top: 25px;
+        width: 100%;
+    }
 }
 
 @media screen and ( max-width: 320px) {
@@ -600,6 +727,17 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 0.48px;
 }
+
+@media screen and ( max-width: 767px)  {
+    .skills__tracker_column {
+        margin-top: 50px;
+    }
+
+    .diagtext {
+        text-align: center;
+    }
+}
+
 
 @media screen and ( max-width: 320px) {
     .skills__tracker_column{
@@ -953,33 +1091,6 @@ textarea {  /* запрещаем изменение размера в textarea 
     color:#6fb9e5;
 }
 
-@media screen and (max-width: 1000px) {
-    .container {
-        max-width: 990px;
-    }
-    
-}
-
-@media screen and ( max-width: 767px) {
-    body {
-        box-sizing: border-box;
-    }
-    .container {
-        max-width: 99%;
-    }
-
-    .aboutus,
-    .intouch,
-    .our_contacts {
-        display: none;
-    }
-   
-    
-}
-
-
-
-
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -993,19 +1104,79 @@ textarea {  /* запрещаем изменение размера в textarea 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .container {
+        max-width: 760px;
+    }
+
+    .intro__inner,
+    .header__inner,
+    .services__inner,
+    .team__inner,
+    .skills__inner,
+    .portf_inner,
+    .aboutus_inner,
+    .intouch_inner {
+        max-width: 761px;
+    }
+
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .container {
+        max-width: 760px;
+
+    }
+
+    .intro__inner,
+    .header__inner,
+    .services__inner,
+    .team__inner,
+    .skills__inner,
+    .portf_inner,
+    .aboutus_inner,
+    .intouch_inner {
+        max-width: 760px;
+    }
 
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
+    .container {
+        max-width: 470px;
+    }
+
+    .intro__inner,
+    .header__inner,
+    .services__inner,
+    .team__inner,
+    .skills__inner,
+    .portf_inner,
+    .aboutus_inner,
+    .intouch_inner {
+        max-width: 470px;
+    }
+
 }
 
 /* Iphone 5 */
 @media (max-width: 320px) {
+    .container {
+        max-width: 320px;
+
+    }
+
+    .intro__inner,
+    .header__inner,
+    .services__inner,
+    .team__inner,
+    .skills__inner,
+    .portf_inner,
+    .aboutus_inner,
+    .intouch_inner {
+        max-width: 310px;
+    }
 
 }
